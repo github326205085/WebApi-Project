@@ -20,4 +20,5 @@ namespace Repository
             return await bookStoreContext.Categories.ToListAsync();
         }
     }
+
 }

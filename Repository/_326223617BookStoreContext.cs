@@ -37,7 +37,7 @@ public partial class _326223617BookStoreContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        if (optionsBuilder.IsConfigured)
+        if (!optionsBuilder.IsConfigured)
         {
             optionsBuilder.UseSqlServer("Data Source=srv2\\PUPILS;Initial Catalog=326223617_BookStore;Trusted_Connection=True;TrustServerCertificate=True");
         }

@@ -42,8 +42,11 @@ async function login() {
             headers: { 'Content-Type': "application/json" },
             body: JSON.stringify(user)
         });
-
-        if (!response.ok) throw new Error('Network response was not ok');
+     
+        if (response.status == 401) {
+            alert("Unauthorized")
+            return;
+        };
 
         const data = await response.json();
         console.log(data);

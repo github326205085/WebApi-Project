@@ -22,7 +22,7 @@ public class UserRepositoryIntegrationTest : IClassFixture<DatabaseFixture>
         //Arrange
         var email = "test@gmail.com";
         var password = "password";
-        var user = new User { Email = email, Password = password, FirstName = "test first name", LastName = "test last name" };
+        var user = new User { Email = email, Password = password, FirstName = "first", LastName = "last" };
         await _dbContext.Users.AddAsync(user);
         await _dbContext.SaveChangesAsync();
 
