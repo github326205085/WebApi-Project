@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Hello to our website</title>
+    <link rel="stylesheet" type="text/css" href="Register.css" />
+    <script src="Register.js"></script>
+
+</head>
+<body>
+    <section class="forms-section">
+        <h1 class="section-title">NEW BORN</h1>
+        <div class="forms">
+            <div class="form-wrapper">
+                <button type="button" id="registerSwitcher" class="switcher switcher-signin">
+                    UPDATE
+                    <span class="underline"></span>
+                </button>
+                <form class="form form-login" id="updateForm">
+      
+                    <fieldset>
+                        <legend>Please, enter your email, password and password confirmation for sign up.</legend>
+                        <div class="input-block">
+                            <label for="userName"><b>שם משתמש</b></label>
+                            <input type="email" placeholder="example@gmail.com" name="userName" id="userName">
+                        </div>
+                        <div class="input-block">
+                            <label for="userName"><b>סיסמא</b></label>
+                            <input type="password" placeholder="הכנס סיסמא" name="psw" id="psw" oninput="passwordChecking()">
+                            <input id="passwordCheck" placeholder="חוזק סיסמא " />
+                        </div>
+                        <div class="input-block">
+                            <label for="firstName"><b>שם פרטי</b></label>
+                            <input type="text" placeholder="הכנס שם פרטי" name="firstName" id="firstName">
+                        </div>
+                        <div class="input-block">
+
+                            <label for="lastName"><b>שם משפחה</b></label>
+                            <input type="text" placeholder="הכנס שם משפחה" name="lastName" id="lastName">
+                        </div>
+
+                    </fieldset>
+                    <button type="submit" class="btn-signup">Update</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="Register.js"></script>
+</body>
+</html>
